@@ -1,0 +1,351 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Universal Styles */
+
+h1 {
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 120px;
+    color: #FEA8A8;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 85px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 60px;
+    color: #93DF64
+}
+
+p {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 25px;
+}
+
+button {
+    background-color: #FEA8A8;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+label {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Homepage */
+/* Header */
+
+header {
+    background-color: #F2DCDC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 0px 5px;
+}
+
+#logo img{
+    width: 150px;
+    height: 150px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #DF2A2A;
+    text-decoration: none;
+    font-size: 45px;
+    font-family: 'Glass Antiqua', cursive;
+}
+
+/* Hero Banner */
+#hero {
+    background: url('images/heroBG.jpg') no-repeat;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroText {
+    text-shadow: 8px 8px 14px black;
+}
+
+.heroText h2 {
+    color: white;
+}
+
+/* Articles */
+.article1 {
+    display: flex;
+    padding: 50px 50px;
+    gap: 50px;
+}
+
+.article2 {
+    display: flex;
+    padding: 50px 50px;
+    gap: 50px;
+}
+
+.articleText h3 {
+    padding-bottom: 15px;
+}
+
+/* Learn recipe block */
+.learnRecipeBlock {
+    background-color: #F2DCDC;
+    height: 400px;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.learnRecipeBlock h2 {
+    color: #FC7979;
+    padding: 40px;
+}
+
+/* About Page */
+.heroAbout {
+    background: url('images/aboutBG.jpg') no-repeat;
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroAbout h1 {
+    color: white;
+    text-shadow: 10px 10px 14px black;
+}
+
+#aboutBlock h2 {
+    color: #93DF64;
+    padding: 50px;
+}
+
+.storyText {
+    display: flex;
+    padding: 0px 50px;
+    gap: 50px;
+}
+
+/* Recipe Page */
+.headerTitle h3 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.infoBlock {
+    position: relative;
+}
+
+#ingredients {
+    background-color: #FFE4E4;
+    width: 800px;
+    height: 1000px;
+    padding: 50px;
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.infoBlock h3 {
+    color: #DF2A2A;
+}
+
+.ingredientSection p {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.ingredientSection li {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 28px;
+}
+
+.recipeImage img {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    left: 700px;
+    top: 150px;
+}
+
+#instructions h3 {
+    text-align: center;
+    padding: 30px;
+}
+
+#instructions {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+}
+
+.instructionSection li {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 20px;
+}
+
+/* Contact Page */
+#contactArea {
+    display: flex;
+}
+
+.contactImage {
+    background: url('images/macaronContact.jpg') no-repeat;
+    width: 800px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactImage h2 {
+    text-shadow: 8px 8px 14px black;
+}
+
+.contactForm {
+    background: #FEA8A8;
+    width: 800px;
+    height: 700px;
+    position: relative;
+}
+
+.contactForm h3 {
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.contactInputBoxes .name {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0px;
+}
+
+.contactInputBoxes .contactMethods {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.contactInputBoxes .commentBox {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+    gap: 15px;
+}
+
+.contactForm .submitButton button{
+    background-color: #FC7979;
+    position: absolute;
+    left: 575px;
+}
+
+/* Footer */
+footer {
+    background-color: #FFE4E4;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+footer li {
+    list-style: none;
+}
+
+.footerNav li a{
+    text-decoration: none;
+    color: #DF2A2A;
+    font-size: 30px;
+    font-family: 'Glass Antiqua', cursive;
+}
+
+.footerNav {
+    display: flex;
+    gap: 20px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
+}
